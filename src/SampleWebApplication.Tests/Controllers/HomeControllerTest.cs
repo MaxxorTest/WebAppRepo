@@ -45,5 +45,19 @@ namespace SampleWebApplication.Tests.Controllers
             // Assert
             Assert.NotNull(result);
         }
+
+        [Fact]
+        public void Test()
+        {
+            // Arrange
+            var controller = new HomeController();
+
+            // Act
+            var result = controller.Test() as ViewResult;
+
+            // Assert
+            Assert.NotNull(result);
+
+        }
     }
 }
