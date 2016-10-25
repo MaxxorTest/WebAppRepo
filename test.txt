@@ -1,0 +1,13 @@
+Test:
+
+In SampleWebApplication Test.cshtml view.
+
+Updated the code so that it accepts inputs 1 and 2, and on click of Submit, it will:
+ - Post the numbers in the input boxes to the server
+ - The server will return the sum of the 2 numbers and put it in the 3rd input box
+
+time for test is 1 hour.
+
+hint:
+- use google
+- see example on https://msdn.microsoft.com/en-us/library/system.web.mvc.jsonresult(v=vs.118).aspx
