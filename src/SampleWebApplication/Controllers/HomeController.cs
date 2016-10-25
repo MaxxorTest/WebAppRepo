@@ -51,16 +51,7 @@ namespace SampleWebApplication.Controllers
             public int Number1;
             public int Number2;
 
-            public MyNumbersModel()
-            {
-            }
-
-            public MyNumbersModel(int number1, int number2)
-            {
-                Number1 = number1;
-                Number2 = number2;
-            }
-
+            
             public string AddThem()
             {
                 return (Number1 + Number2).ToString();
