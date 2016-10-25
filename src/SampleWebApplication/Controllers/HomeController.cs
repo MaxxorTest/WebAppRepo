@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Data.Entity.Core.Common.EntitySql;
+using System.Web.Mvc;
+using static System.Int32;
 
 namespace SampleWebApplication.Controllers
 {
@@ -28,6 +30,42 @@ namespace SampleWebApplication.Controllers
             ViewBag.Message = "Your test page.";
 
             return View();
+        }
+
+        public ActionResult TestResult()
+        {
+            var num1 = $"{Request.Form["Number1"]}";
+            var num2 = $"{Request.Form["Number2"]}";
+
+            var myNumbers = new MyNumbersModel
+            {
+                Number1 = Parse(num1),
+                Number2 = Parse(num2)
+            };
+
+            return Json(myNumbers.AddThem(), JsonRequestBehavior.AllowGet);
+        }
+
+        private class MyNumbersModel
+        {
+            public int Number1;
+            public int Number2;
+
+            public MyNumbersModel()
+            {
+            }
+
+            public MyNumbersModel(int number1, int number2)
+            {
+                Number1 = number1;
+                Number2 = number2;
+            }
+
+            public string AddThem()
+            {
+                return (Number1 + Number2).ToString();
+            }
+
         }
     }
 }
