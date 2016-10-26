@@ -6,7 +6,7 @@ Updated the code so that it accepts inputs 1 and 2, and on click of Submit, it w
  - Post the numbers in the input boxes to the server
  - The server will return the sum of the 2 numbers and put it in the 3rd input box
 
-time for test is 1 hour.
+time for test is 2 hour.
 
 hint:
 - use google
