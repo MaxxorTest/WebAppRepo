@@ -9,12 +9,12 @@
 <form>
     <label>
         Number 1
-        <input name="Number1"/>
+        <input name="Number1" id="Number1"/>
     </label>
     <br/>
     <label>
         Number 2
-        <input name="Number2"/>
+        <input name="Number2" id="Number2"/>
     </label>
     <br/>
     <br/>
@@ -23,7 +23,7 @@
     <br/>
     <label>
         Answer<br/>
-        <input name="Answer"/>
+        <input name="Answer" id="Answer"/>
     </label>
 
 </form>
@@ -33,7 +33,13 @@
 
         $(document).ready(function() {
             //Add jquery code here
+            //Add jquery code here
+            $("#submit").click(function () {
+                var val1 = parseInt($("#Number1").val());
+                var val2 = parseInt($("#Number2").val());
 
+                $("#Answer").val(val1 + val2);
+            });
         });
 
     </script>
