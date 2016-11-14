@@ -19,9 +19,10 @@ In SampleWebApplication Solution.
 
 4. Add jquery cde to do the following: when PHP is click, it will turn red, while the others are black, the same must happen for C#, C++ and HTML.  This jquery must only be in services.js
 
-5. Create a partial view, that is shown on bottom of each page.
-	a: the partial view must be a form of input box for email and submit button
-	ps: for now, submit wont have to do anything.
+Bonus:
+ Create a partial view, that is shown on bottom of each page.
+ a: the partial view must be a form of input box for email and submit button
+ ps: for now, submit won't have to do anything.
 
 
 
