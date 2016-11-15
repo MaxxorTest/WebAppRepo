@@ -1,3 +1,57 @@
+Test: 2016-11-11
+
+
+on your own branch do the following. when you are done. create a pull request so that your work can be checked.
+
+---------------------------------
+In SampleWebApplication Solution.
+
+1. Add a "Services" Page(view). the page can have the following content as a list.
+
+ - PHP
+ - C#
+ - C++
+ - HTML
+ 
+2. This page must also load a file that you create services.js.  (use bundle config)
+
+3. In services.js, have jquery ready paranthesis with console log saying "hello from services";
+
+4. Add jquery cde to do the following: when PHP is click, it will turn red, while the others are black, the same must happen for C#, C++ and HTML.  This jquery must only be in services.js
+
+Bonus:
+ Create a partial view, that is shown on bottom of each page.
+ a: the partial view must be a form of input box for email and submit button
+ ps: for now, submit won't have to do anything.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==================================================================================================================
+
+FINISHED TESTS DONT DO THIS
+***************************
 Test:
 
 In SampleWebApplication Test.cshtml view.
@@ -6,7 +60,7 @@ Updated the code so that it accepts inputs 1 and 2, and on click of Submit, it w
  - Post the numbers in the input boxes to the server
  - The server will return the sum of the 2 numbers and put it in the 3rd input box
 
-time for test is 1 hour.
+time for test is 2 hour.
 
 hint:
 - use google
