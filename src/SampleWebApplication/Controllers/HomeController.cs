@@ -29,5 +29,12 @@ namespace SampleWebApplication.Controllers
 
             return View();
         }
+
+        public ActionResult Services()
+        {
+            ViewBag.Message = "Your services page.";
+
+            return View();
+        }
     }
 }
