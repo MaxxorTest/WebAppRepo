@@ -2,7 +2,6 @@
 using SampleWebApplication.Controllers;
 using Xunit;
 
-
 namespace SampleWebApplication.Tests.Controllers
 {
     public class HomeControllerTest
