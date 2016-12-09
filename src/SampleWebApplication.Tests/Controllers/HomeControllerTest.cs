@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Runtime.InteropServices.ComTypes;
+using System.Web.Mvc;
+using SampleWebApplication.Classes;
 using SampleWebApplication.Controllers;
 using Xunit;
 
@@ -58,5 +60,41 @@ namespace SampleWebApplication.Tests.Controllers
             Assert.NotNull(result);
 
         }
+
+        [Theory]
+        [InlineData(1,2,3)]
+        [InlineData(5,2,7)]
+        [InlineData(3,2,5)]
+        [InlineData(-3,2,-1)]
+        public void ClassToAdd2Numbers(int n1, int n2, int ans)
+        {
+            // Arrange
+            var classArith = new Arithmetic();
+            
+            //Act
+            var res = classArith.Add2Numbers(n1, n2);
+
+            //Assert
+            Assert.Equal(ans, res);
+
+        }
+
+        [Theory]
+        [InlineData(5,5,25)]
+        [InlineData(7,7,49)]
+        [InlineData(25,25,625)]
+        public void Multiply2Numbers(int n1, int n2, int ans)
+        {
+            // arrange
+            var classArith = new Arithmetic();
+
+            // act
+            var ret = classArith.Multiply2Numbers(n1, n2);
+
+            // assert
+            Assert.Equal(ans, ret);
+        }
+
+
     }
 }
